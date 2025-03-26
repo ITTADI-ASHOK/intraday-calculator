@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intraday Trading Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Intraday Trading Calculator for stock market traders to calculate potential profit/loss with leverage.">
+
+
+    <!-- TradingView Quote -->
+    <div class="quote">LOOK FIRST / THEN LEAP</div>
+
+    <div class="container">
+        <h2>Intraday Trading Calculator</h2>
+        
+        <label for="capital">Enter Your Capital (₹):</label>
+        <input type="number" id="capital" placeholder="Enter amount" value="2000">
+        
+        <label for="leverage">Leverage (e.g., 5x):</label>
+        <input type="number" id="leverage" placeholder="Enter leverage" value="5">
+        
+        <label for="stockPrice">Stock Price (₹):</label>
+        <input type="number" id="stockPrice" placeholder="Enter stock price" value="682">
+        
+        <label for="profitTarget">Take Profit %:</label>
+        <input type="number" id="profitTarget" placeholder="Enter profit %" value="2">
+        
+        <label for="stopLoss">Stop Loss %:</label>
+        <input type="number" id="stopLoss" placeholder="Enter loss %" value="1">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="result-container">
+            <div id="quantityResult"></div>
+            <div id="profitBox" class="profit-box"></div>
+            <div id="lossBox" class="loss-box"></div>
+            <div id="takeProfit" class="take-profit"></div>
+            <div id="stopLossValue" class="stop-loss"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
